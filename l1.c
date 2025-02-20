@@ -5,7 +5,16 @@
 #include <stdio.h>
 #include <memory.h>
 
-#include "lines.h"
+#define MAX_SIZE 24
+#define TOP_LEFT (MAX_SIZE / 2 - 2)
+#define TOP_TOP (MAX_SIZE / 2 - 5)
+
+struct sPOINT {
+  short used;
+  char r[8];
+};
+
+struct sPOINT field[MAX_SIZE][MAX_SIZE];
 
 int n_max_lines = 0;
 int n_lines = 0;
