@@ -52,5 +52,6 @@ Mkfile.old
 dkms.conf
 
 # Executables
-./l1
-./l2
+l1
+l2
+
